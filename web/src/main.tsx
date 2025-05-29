@@ -72,23 +72,6 @@ function NotificationSystem() {
     }
   });
 
-  // cretae button handle
-  //@ts-ignore 
-  const handleButtonClick = () => {
-    return (
-      <Button
-        variant="solid"
-        color="primary"
-        className="bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-primary/50"
-        onClick={() => {
-          fetchNui("close");
-        }}
-      >
-        Close
-      </Button>
-    )
-  };
-
   return (
     <>
       <ToastProvider
